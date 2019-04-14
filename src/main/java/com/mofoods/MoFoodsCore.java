@@ -20,20 +20,19 @@ public class MoFoodsCore {
 	public static Logger logger;
 
 	@Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-       logger = event.getModLog();
-        proxy.preInit(event);
-    }
+	public void preInit(FMLPreInitializationEvent event) {
+		logger = event.getModLog();
+		proxy.preInit(event);
+	}
 
-    @Mod.EventHandler
-    public void init(FMLInitializationEvent e) {
-        proxy.init(e);
-    }
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent e) {
+		proxy.init(e);
+	}
 
-    @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent e) {
-        proxy.postInit(e);
-    }
-
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent e) {
+		proxy.postInit(e);
+	}
 
 }
